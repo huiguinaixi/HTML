@@ -1,0 +1,42 @@
+/* 组合选择器 */
+div,p{
+    color:red;
+}
+/* 通配符选择器 */
+*{
+    color:blue;
+}
+/* 层次选择器 
+1.子级选择器*/
+aside>div{
+    color:green;
+}
+/* 2.后代选择器 */
+article p{
+    color:purple;
+}
+/* 兄弟选择器 */
+div+p{
+    color:pink;
+}
+/* 通用选择器 */
+div~section{
+    color: aqua;
+}
+/* 动态伪类选择器 */
+/* 1.为访问 */
+a:link{
+    color:red;
+}
+/* 已访问 */
+a:visited{
+    color:blue;
+}
+/* 悬停时 */
+a:hover{
+    color:purple;
+}
+/* 点击时 */
+a:active{
+    color:green;
+}

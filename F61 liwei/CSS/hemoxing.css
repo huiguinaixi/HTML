@@ -1,0 +1,11 @@
+/* article标签，定义了content的长宽，overflow功能 */
+article{
+    width:120px;
+    height:120px;
+    background-color:blue;
+    /* overflow: hidden; */
+    /* overflow:scroll; */
+    overflow:auto;
+    border:2px solid red;
+    margin: 3px 4px ;
+}

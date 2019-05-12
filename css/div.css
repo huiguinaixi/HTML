@@ -40,3 +40,8 @@ a:hover{
 a:active{
     color:green;
 }
+article{
+    border:10px;
+    border-color:red;
+    border-radius:2px;
+}

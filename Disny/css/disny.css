@@ -1,0 +1,356 @@
+/* 主题部分 */
+main{
+    width:1200px;
+    height:100%;
+    margin:auto;
+}
+/* 头部弹性布局 */
+header{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top:0px;
+    width:1200px;
+    background-color: rgb(247, 246, 248);
+   padding:15px 0px;
+   z-index: 2;
+}
+a{
+    color:black;
+    font-size: 20px;
+}
+a:hover{
+    color:red;
+}
+/* 引用i的小图标， */
+i{
+    width:21px;
+    height:19px;
+    display: inline-block;
+    background-image: url("../img/icon.png");
+}
+/* 第一个头部下面的a标签悬停时i标签改变图表 */
+header>a:hover>i{
+    background-position: -21px 0;
+}
+/* 第二个头部下面的a标签悬停时i标签改变图表 */
+header>a:nth-child(2)>i{
+    width:21px;
+    height:19px;
+    display: inline-block;
+    background-image: url("../img/icon.png");
+    background-position: 0 -20px;
+}
+header>a:nth-child(2):hover>i{
+    background-position: -21px -20px;
+}
+/* 第三个头部下面的a标签悬停时i标签改变图表 */ 
+header>a:nth-child(3)>i{
+    width:17px;
+    height:23px;
+    display: inline-block;
+    background-image: url("../img/icon.png");
+    background-position: 0 -39px;
+}
+header>a:nth-child(3):hover>i{
+    background-position: -22px -39px;
+}
+/* 第四个头部下面的a标签悬停时i标签改变图表 */
+header>a:nth-of-type(4)>i{
+    width:19px;
+    height:16px;
+    display: inline-block;
+    background-image: url("../img/icon.png");
+    background-position: 0 -63px;
+}
+header>a:nth-of-type(4):hover>i{
+    background-position: -22px -63px;
+}
+/* 第五个头部下面的a标签悬停时i标签改变图表 */
+header>a:nth-of-type(5)>i{
+    width:13px;
+    height:21px;
+    display: inline-block;
+    background-image: url("../img/icon.png");
+    background-position: 0 -80px;
+}
+header>a:nth-of-type(5):hover>i{
+    background-position: -22px -80px;
+}
+/* 第六个头部下面的a标签悬停时i标签改变图表 */
+header>a:nth-of-type(6)>i{
+    width:21px;
+    height:17px;
+    display: inline-block;
+    background-image: url("../img/icon.png");
+    background-position: 0 -101px;
+}
+header>a:nth-of-type(6):hover>i{
+    background-position: -22px -101px;
+}
+/* 图片有下外间距 */
+.banner{
+    height: 510px;
+    margin-top:77px;
+    margin-bottom:60px;
+}
+
+h1{
+    text-align: center;
+    font-size:33px;
+    margin-bottom:46px;
+}
+/* 文字居中 */
+p{
+    text-align:center;
+    font-size:19px;
+    margin: 0px;
+}
+.mingxing{
+    margin-bottom:62px;
+}
+/* 将.mignxing下面的子标签div设置成容器，项目分散对其 */
+.mingxing>div{
+    display: flex;
+    justify-content:space-around;
+ } 
+ /* .mingxing下面的div下面的div标签里面的img下间距和img的宽度 */
+ .mingxing>div>div>img{
+     margin-bottom:25px;
+     width: 115px;
+ }
+ .shop>h1{
+margin: 43px;
+ }
+ .shop>div{
+     height: 591px;
+ }
+ .shop-picture{
+     width:50%;
+     /* height: 100%; */
+     float: left;
+ }
+ .goods{
+    width:50%;
+    height: 100%;
+   float: left;
+    /* display: flex; */
+    font-size:0px;
+    /* margin-bottom: 60px; */
+ }
+ .goods>img{
+     width:50%;
+     /* height: 50%; */
+ }
+ /* .goods>img:nth-child(2){
+    width:50%;
+    height: 50%;
+}
+.goods>img:nth-child(3){
+    width:50%;
+    height: 50%;
+    
+}
+.goods>img:nth-child(4){
+    width:50%;
+    height: 50%;
+  
+} */
+/* aside{
+    outline:1px solid gray;
+} */
+ aside>h1{
+     font-size:33px;
+     text-align:center;
+     margin-top: 60px;
+     margin-bottom: 44px;
+ }
+.information{
+    height:770px;
+    display: flex;
+    justify-content: flex-start;
+}
+.information>div:first-child{
+    width:50%;
+    height:100%;
+    /* display: flex;
+    flex-direction: column; */
+
+}
+.information>div:first-child>i{
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+    background-image:("../img/icon.png");
+    background-position: -0px -195px;
+    position: absolute;
+    z-index: 1;
+    left: 194px;
+    top:2202px;
+}
+.information>div>p
+{
+    font-size: 30px; 
+    margin: 39px 118px 30px 49px;
+    text-align: left;
+}
+.information>div>.open
+{
+    font-size: 14px; 
+    margin: 31px 118px 0px 49px;
+    text-align: left;
+}
+.open>i{
+    display:inline-block;
+    width:23px;
+    height:22px;
+    background-image: url("../img/icon.png");
+    background-position: -41px -170px;
+}
+.information>.movie{
+    width:50%;
+    height:100%;
+}
+.information>.movie>div:first-child{
+    height: 475px; 
+    display: flex;
+    justify-content: flex-start;
+}
+.movie>div:first-child>.declare{
+    width:50%;
+}
+.movie>div:first-child>.declare>i{
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+    background-image:("../img/icon.png");
+    background-position: 0px -195px;
+    position: absolute;
+    left:775px;
+    top:2032px;
+    z-index: 1;
+
+}
+.movie>div:first-child>.declare>.Box{
+    width:300px;
+    height: 100%;
+}
+.declare>.Box>p:first-child{
+    font-weight: bold;
+    font-size: 22px; 
+    margin:10px 17px 0px 29px;
+}
+.declare>.Box>.best{
+    font-size: 15px; 
+    margin:10px 29px 25px 30px;
+    text-align: left;
+}
+.Box>.best>i{
+    display:inline-block;
+    width:23px;
+    height:22px;
+    background-image: url("../img/icon.png");
+    background-position: -41px -170px;
+}
+.movie>div:first-child>.posters{
+    width:50%;
+}
+.movie>div:first-child>.posters{
+    width:300px;
+    height: 100%;
+    display: flex;
+    flex-direction: column; 
+}
+.movie>div:first-child>.posters>i{
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+    background-image:("../img/icon.png");
+    background-position: -0px -195px;
+    position: absolute;
+    z-index: 1;
+    left:1076px;
+    top:2033px;
+
+}
+.movie>div:first-child>.posters>.message>p:first-child{
+    font-weight: bold;
+    font-size: 22px; 
+    margin:30px 17px 0px 29px;
+}
+.movie>div:first-child>.posters>.message>p:last-child{
+    font-size: 15px; 
+    margin:30px 29px 25px 49px;
+    text-align: left;
+}
+.posters>.message>p:last-child>i{
+    display:inline-block;
+    width:23px;
+    height:22px;
+    background-image: url("../img/icon.png");
+    background-position: -41px -170px;
+}
+.information>.movie>div:last-child{
+    height: 296px; 
+    display: flex;
+    justify-content: flex-start;
+}
+.information>.movie>div:last-child>i{
+    display: inline-block;
+    width: 25px;
+    height: 49px;
+    background-image:("../img/icon.png");
+    background-position: -0px -195px;
+    position: absolute;
+    z-index: 1;
+    left:1028px;
+    top:2249px;
+}
+.movie>div:last-child>.propaganda>p:first-child{
+    font-weight: bold;
+    font-size: 22px; 
+    margin:30px 17px 0px 29px;
+}
+.movie>div:last-child>.propaganda>p:last-child{
+    font-size: 15px; 
+    margin:30px 29px 25px 49px;
+    text-align: left;
+}
+.movie>div:last-child>.propaganda>p:last-child>i{
+    display:inline-block;
+    width:23px;
+    height:22px;
+    background-image: url("../img/icon.png");
+    background-position: -41px -170px;
+}
+
+footer>div:first-child{
+    width:485px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    padding-bottom: 25px;
+    padding-top:91px;
+    border-bottom: 1px solid gray;
+    margin-bottom: 23px;
+}
+footer>div:first-child>img{
+    padding-right: 30px;
+    border-right: 1px solid grey;
+}
+footer>div:first-child>div>p{
+    font-size:14px;
+}
+
+footer>.down{
+    width:485px;
+    display: flex; 
+    justify-content: space-around;
+    margin: auto;
+    margin-bottom:17px;
+}
+footer>.down>p{
+    font-size: 14px;
+    font-weight: bold;
+}

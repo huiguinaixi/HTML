@@ -1,0 +1,691 @@
+/* 头部导航栏 */
+header {
+  width: 100%;
+  height: 60px;
+  outline: 1px solid black;
+  background-color: black;
+}
+nav {
+  width: 1000px;
+  height: 60px;
+  margin: auto;
+  display: flex;
+}
+nav > .Home {
+  width: 249px;
+  margin-left: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav > .Home > a {
+  color: gray;
+}
+nav > .Home > a:first-child {
+  color: white;
+}
+/* 宣传栏 */
+.Propaganda {
+  height: 500px;
+  width: 100%;
+  background-image: url("../img/top_banner03.jpg");
+  background-size: 100% 100%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.button {
+  width: 87px;
+  height: 60px;
+  background-color: gray;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 455px;
+  top: 305px;
+}
+.button:hover {
+  background-color: red;
+}
+.button > div {
+  width: 0px;
+  height: 0px;
+  border-top: 14px solid transparent;
+  border-right: 0px solid transparent;
+  border-bottom: 17px solid transparent;
+  border-left: 33px solid rgb(252, 250, 250);
+}
+/* 最新动态 */
+.dynamic {
+  background-image: url("../img/new_bj.jpg");
+  background-repeat: repeat-x;
+  margin-bottom: 60px;
+}
+.dynamic > img {
+  padding-top: 30px;
+}
+.dynamic > div {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.poster {
+  display: flex;
+  justify-content: space-between;
+}
+.poster > div {
+  margin: 0px 3px;
+  background-color: rgb(197, 192, 192);
+}
+.poster > div:nth-child(1) > div {
+  text-align: center;
+}
+.poster > div:nth-child(2) > div {
+  text-align: center;
+}
+.poster > div:nth-child(3) > div {
+  text-align: center;
+}
+.dynamic > .Next1 {
+  height: 29px;
+  display: flex;
+  justify-content: center;
+}
+.Next1 > i {
+  display: inline-block;
+  background-image: url("../img/icon.png");
+  background-position: -1px -286px;
+  width: 88px;
+  height: 27px;
+}
+/* 介绍漫威电影 */
+
+.series > div:first-child {
+  width: 1000px;
+  /* height: 50px; */
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+.series > div:first-child > p {
+  font-weight: bold;
+  margin-right: 164px;
+}
+/* 中间阶段 */
+.stage {
+  width: 550px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 107px;
+}
+.stage > a {
+  text-decoration: none;
+  padding: 10px;
+}
+.stage > a:hover {
+  box-sizing: border-box;
+  color: red;
+  padding: 10px;
+  border-bottom: 3px solid red;
+}
+.More {
+  width: 115px;
+  /* height: 35px; */
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.More > a {
+  text-decoration: none;
+  color: white;
+}
+/* 发展进程 */
+.Start {
+  height: 510px;
+  background-image: url("../img/movie_bj_02.jpg");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 100% 100%;
+  position: relative;
+  overflow: hidden;
+}
+.Start > div:first-child > .time {
+  width: 940px;
+  /* height: 25px; */
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  color: white;
+  position: absolute;
+  top: 210px;
+  left: 195px;
+}
+.Start > div:nth-child(2) > .movie1 {
+  width: 790px;
+  /* height: 25px; */
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  color: white;
+  position: absolute;
+  top: 145px;
+  left: 190px;
+}
+.Start > div:nth-child(3) > .logo1 {
+  width: 865px;
+  /* height: 160px; */
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  position: absolute;
+  top: 15px;
+  left: 165px;
+}
+.Start > div:nth-child(4) > .movie2 {
+  width: 790px;
+  /* height: 25px; */
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  color: white;
+  position: absolute;
+  top: 260px;
+  left: 366px;
+}
+.Start > div:nth-child(5) > .logo2 {
+  width: 855px;
+  /* height: 160px; */
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  position: absolute;
+  top: 315px;
+  left: 333px;
+}
+.Start > .Next2 {
+  display: flex;
+  justify-content: center;
+}
+.Next2 > i {
+  position: absolute;
+  display: inline-block;
+  background-image: url("../img/icon.png");
+  background-position: -1px -286px;
+  width: 88px;
+  height: 27px;
+  top: 475px;
+}
+/* 漫威剧集 */
+.TV {
+  height: 550px;
+  background-image: url("../img/watch_bj.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.TV-content{
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.recommend {
+  width:1000px;
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top:20px;
+}
+.recommend > p {
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 15px;
+}
+.recommend > div:nth-child(2) {
+  width: 115px;
+  height: 35px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.recommend > div:nth-child(2) > a {
+  text-decoration: none;
+  color: white;
+}
+/* 选择  */
+.select {
+  width: 1000px;
+  position: absolute;
+  top: 278px;
+  left: 175px;
+  display: flex;
+  justify-content: space-between;
+}
+.left {
+  background-image: url("../img/icon.png");
+  background-position: -1px -36px;
+  width: 32px;
+  height: 60px;
+}
+.left:hover {
+  background-image: url("../img/icon.png");
+  background-position: -73px -36px;
+  width: 32px;
+  height: 60px;
+}
+.right {
+  background-image: url("../img/icon.png");
+  background-position: -34px -36px;
+  width: 32px;
+  height: 60px;
+}
+.right:hover {
+  background-image: url("../img/icon.png");
+  background-position: -107px -36px;
+  width: 32px;
+  height: 60px;
+}
+.center {
+  display: flex;
+  align-items: center;
+}
+.center > div {
+  background-image: url("../img/icon.png");
+  background-position: 0px 0px;
+  width: 120px;
+  height: 36px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.center > div > a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+/* 剧照 */
+.Stills {
+  display: flex;
+  width: 100%;
+  position: absolute;
+  top: 360px;
+  justify-content: center;
+}
+.Stills > div {
+  width: 745px;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.plot1 {
+  width: 100%;
+  background-image: url("../img/watch_pic02.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.plot2 {
+  width: 100%;
+  background-image: url("../img/watch_pic02.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin: 0px 30px;
+  position: relative;
+}
+.plot3 {
+  width: 100%;
+  background-image: url("../img/watch_pic02.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.plot1 > a > div {
+  width: 30px;
+  height: 25px;
+  border: 1px solid black;
+  background-color: gray;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 196px;
+  top: 102px;
+}
+.plot1 > a > div > div {
+  width: 0px;
+  height: 0px;
+  border-top: 7px solid transparent;
+  border-right: 0px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 10px solid rgb(252, 250, 250);
+}
+.plot2 > a > div {
+  width: 30px;
+  height: 25px;
+  border: 1px solid black;
+  background-color: gray;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 196px;
+  top: 102px;
+}
+.plot2 > a > div > div {
+  width: 0px;
+  height: 0px;
+  border-top: 7px solid transparent;
+  border-right: 0px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 10px solid rgb(252, 250, 250);
+}
+.plot3 > a > div {
+  width: 30px;
+  height: 25px;
+  border: 1px solid black;
+  background-color: gray;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 196px;
+  top: 102px;
+}
+.plot3 > a > div > div {
+  width: 0px;
+  height: 0px;
+  border-top: 7px solid transparent;
+  border-right: 0px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 10px solid rgb(252, 250, 250);
+}
+.Next3{
+  width:1000px;
+  display: flex;
+  justify-content: center;
+}
+.Next3 > i {
+  position: absolute;
+  display: inline-block;
+  background-image: url("../img/icon.png");
+  background-position: -1px -286px;
+  width: 88px;
+  height: 27px;
+  top: 510px;
+}
+/* 动漫 */
+.anime {
+  background-image: url("../img/am_bj.jpg");
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.animeContent {
+  width: 1000px;
+}
+.cartoon {
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin:20px 0 10px 0;
+}
+.cartoon > h4 {
+  font-weight: bold;
+  letter-spacing: 15px;
+  font-size: 25px;
+}
+.cartoon > div:nth-child(2) {
+  width: 115px;
+  height: 35px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cartoon > div:nth-child(2) > a {
+  text-decoration: none;
+  color: white;
+}
+/* 图片 */
+.spider-man {
+  display: flex;
+  justify-content: space-between;
+}
+.first-quarter {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.trailer1 {
+  width: 100%;
+  height: 130px;
+  background-image: url("../img/dm_pic01.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+.trailer1:hover {
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.4);
+}
+.trailer1 > a > div {
+  width: 30px;
+  height: 25px;
+  border: 1px solid black;
+  background-color: gray;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 195px;
+  top: 103px;
+}
+.demand {
+  width: 0px;
+  height: 0px;
+  border-top: 7px solid transparent;
+  border-right: 0px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 10px solid rgb(252, 250, 250);
+}
+.text > p {
+  font-weight: bold;
+}
+.text {
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+.text > div {
+  width: 33px;
+  height: 25px;
+  background-color: black;
+  color: white;
+}
+/* 第二部 */
+.second-quarter {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px 25px;
+}
+.trailer2 {
+  width: 100%;
+  height: 130px;
+  background-image: url("../img/dm_pic02.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+.trailer2:hover {
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.4);
+}
+.trailer2 > a > div {
+  width: 30px;
+  height: 25px;
+  border: 1px solid black;
+  background-color: gray;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 195px;
+  top: 103px;
+}
+.third-quarter {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.trailer3 {
+  width: 100%;
+  height: 130px;
+  background-image: url("../img/dm_pic03.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+.trailer3:hover {
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.4);
+}
+.trailer3 > a > div {
+  width: 30px;
+  height: 25px;
+  border: 1px solid black;
+  background-color: gray;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 195px;
+  top: 103px;
+}
+/* 第四部 */
+.four-quarter {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px 12px 0px 30px;
+}
+.trailer4 {
+  width: 100%;
+  height: 130px;
+  background-image: url("../img/dm_pic04.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+.trailer4:hover {
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.4);
+}
+.trailer4 > a > div {
+  width: 30px;
+  height: 25px;
+  border: 1px solid black;
+  background-color: gray;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 195px;
+  top: 103px;
+}
+/* 第三部分 */
+.book{
+  display: flex;
+  justify-content: space-around;
+  margin:65px 0 86px 0;
+}
+.era1{
+  display: flex;
+margin-right:22px;
+}
+.era1>div>img{
+ box-shadow: 0 0 8px 5px rgba(0, 0, 0, 0.4);
+ margin:0px 22px;
+}
+.era1>div>img:hover {
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.8);
+}
+.era1>div>h1{
+font-weight: bold;
+font-size: 20px;
+}
+.era2{
+  display: flex;
+  margin-right: 20px;
+}
+.era2>div>img{
+ box-shadow: 0 0 8px 5px rgba(0, 0, 0, 0.4);
+ margin-right: 22px;
+
+}
+.era2>div>img:hover {
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.8);
+}
+.era2>div>h1{
+font-weight: bold;
+font-size: 20px;
+}
+.book>.left {
+  background-image: url("../img/icon.png");
+
+  background-position: -73px -36px;
+  width: 32px;
+  height: 60px;
+  position: absolute;
+  left:140px;
+  bottom:140px;
+}
+.book>.left:hover {
+  background-image: url("../img/icon.png");
+  background-position: -1px -36px;
+  width: 32px;
+  height: 60px;
+}
+.book>.right {
+  background-image: url("../img/icon.png");
+  background-position: -107px -36px;
+  width: 32px;
+  height: 60px;
+  position: absolute;
+ right:140px;
+  bottom:140px;
+}
+.book>.right:hover {
+  background-image: url("../img/icon.png");
+  background-position: -34px -36px;
+  width: 32px;
+  height: 60px;
+} 
+/* 尾部 */
+
+footer{
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.last{
+  width: 1000px;
+  text-align: center;
+  margin:60px 0 40px 0;
+}

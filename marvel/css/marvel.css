@@ -1,9 +1,17 @@
+body{
+  max-width:100%;
+  min-width:1200px;
+}
+
 /* 头部导航栏 */
 header {
-  width: 100%;
   height: 60px;
   outline: 1px solid black;
   background-color: black;
+  position: fixed;
+  width:100%;
+  top:0;
+  z-index: 2;
 }
 nav {
   width: 1000px;
@@ -20,19 +28,21 @@ nav > .Home {
 }
 nav > .Home > a {
   color: gray;
+  text-decoration: none;
 }
 nav > .Home > a:first-child {
   color: white;
 }
 /* 宣传栏 */
 .Propaganda {
+  min-width: 1200px;
   height: 500px;
-  width: 100%;
   background-image: url("../img/top_banner03.jpg");
-  background-size: 100% 100%;
+  background-size: auto 500px;
   position: relative;
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: center;
+  margin-top:60px;
 }
 .button {
   width: 87px;
@@ -43,8 +53,8 @@ nav > .Home > a:first-child {
   justify-content: center;
   align-items: center;
   position: absolute;
-  left: 455px;
-  top: 305px;
+  left: 410px;
+  top: 310px;
 }
 .button:hover {
   background-color: red;
@@ -80,6 +90,13 @@ nav > .Home > a:first-child {
 .poster > div {
   margin: 0px 3px;
   background-color: rgb(197, 192, 192);
+}
+.poster > div >img{
+  opacity:0.5;
+  transition: 1s;
+}
+.poster > div >img:hover{
+  opacity:1;
 }
 .poster > div:nth-child(1) > div {
   text-align: center;
@@ -121,17 +138,30 @@ nav > .Home > a:first-child {
   display: flex;
   justify-content: space-between;
   margin-right: 107px;
+
 }
 .stage > a {
   text-decoration: none;
   padding: 10px;
+  /* border-bottom: 3px solid transparent; */
+  position: relative;
 }
-.stage > a:hover {
-  box-sizing: border-box;
-  color: red;
-  padding: 10px;
-  border-bottom: 3px solid red;
+.stage>a::before{
+  content: "";
+  display: inline-block;
+  border-bottom:3px solid red;
+  position: absolute;
+  bottom:0;
+  left:50%;
+  width:0;
+  transition: all 1s;
 }
+
+.stage > a:hover::before {
+  width:100%;
+  border:3px solid red;
+  left:0;
+}  
 .More {
   width: 115px;
   /* height: 35px; */
@@ -154,7 +184,7 @@ nav > .Home > a:first-child {
   position: relative;
   overflow: hidden;
 }
-.Start > div:first-child > .time {
+ .time {
   width: 940px;
   /* height: 25px; */
   display: flex;
@@ -165,7 +195,10 @@ nav > .Home > a:first-child {
   top: 210px;
   left: 195px;
 }
-.Start > div:nth-child(2) > .movie1 {
+.time>p:hover,.movie1>h4:hover{
+  color:red;
+}
+.movie1 {
   width: 790px;
   /* height: 25px; */
   display: flex;
@@ -176,7 +209,7 @@ nav > .Home > a:first-child {
   top: 145px;
   left: 190px;
 }
-.Start > div:nth-child(3) > .logo1 {
+ .logo1 {
   width: 865px;
   /* height: 160px; */
   display: flex;
@@ -186,7 +219,24 @@ nav > .Home > a:first-child {
   top: 15px;
   left: 165px;
 }
-.Start > div:nth-child(4) > .movie2 {
+.logo1>div:nth-child(1){
+background-image: url("../img/movie_pic.png");
+}
+.logo1>div:nth-child(2){
+  background-image: url("../img/movie_pic03.png");
+  }
+  .logo1>div:nth-child(3){
+    background-image: url("../img/movie_pic05.png");
+    }
+.logo1>div>img{
+  opacity:1;
+}
+.logo1>div>img:hover{
+  opacity:0;
+  transform: scale(1.5);
+  transition: all 1s;
+}
+.movie2 {
   width: 790px;
   /* height: 25px; */
   display: flex;
@@ -197,7 +247,7 @@ nav > .Home > a:first-child {
   top: 260px;
   left: 366px;
 }
-.Start > div:nth-child(5) > .logo2 {
+ .logo2 {
   width: 855px;
   /* height: 160px; */
   display: flex;
@@ -429,7 +479,7 @@ nav > .Home > a:first-child {
 /* 动漫 */
 .anime {
   background-image: url("../img/am_bj.jpg");
-  position: relative;
+  /* position: relative; */
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -612,11 +662,16 @@ nav > .Home > a:first-child {
 .book{
   display: flex;
   justify-content: space-around;
+  align-items: center;
   margin:65px 0 86px 0;
+}
+.zhong{
+  display: flex;
 }
 .era1{
   display: flex;
 margin-right:22px;
+width: 50%;
 }
 .era1>div>img{
  box-shadow: 0 0 8px 5px rgba(0, 0, 0, 0.4);
@@ -632,6 +687,7 @@ font-size: 20px;
 .era2{
   display: flex;
   margin-right: 20px;
+  width: 50%;
 }
 .era2>div>img{
  box-shadow: 0 0 8px 5px rgba(0, 0, 0, 0.4);
@@ -651,9 +707,9 @@ font-size: 20px;
   background-position: -73px -36px;
   width: 32px;
   height: 60px;
-  position: absolute;
+  /* position: absolute;
   left:140px;
-  bottom:140px;
+  bottom:140px; */
 }
 .book>.left:hover {
   background-image: url("../img/icon.png");
@@ -666,9 +722,9 @@ font-size: 20px;
   background-position: -107px -36px;
   width: 32px;
   height: 60px;
-  position: absolute;
+  /* position: absolute;
  right:140px;
-  bottom:140px;
+  bottom:140px; */
 }
 .book>.right:hover {
   background-image: url("../img/icon.png");

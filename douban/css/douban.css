@@ -1,0 +1,411 @@
+/* 导航栏 */
+/* *{
+  border: 1px solid red!important;
+} */
+nav {
+  background-color: #9d9e9c;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  position: fixed;
+  top: 0px;
+  min-width: 1200px;
+}
+nav > div:nth-child(1) {
+  width: 670px;
+  display: flex;
+  justify-content: space-around;
+  margin-right: 500px;
+}
+nav > div:nth-child(1) > a {
+  color: black;
+  font-size: 16px;
+  text-decoration: none;
+}
+nav > div:nth-child(2) {
+  width: 250px;
+  display: flex;
+  justify-content: space-around;
+}
+nav > div:nth-child(2) > a {
+  color: black;
+  font-size: 16px;
+  text-decoration: none;
+}
+nav > div > a:hover {
+  color: red;
+}
+/* 头部header */
+header {
+  width: 100%;
+  height: 76px;
+  background-color: rgb(237, 244, 237);
+  position: fixed;
+  top: 30px;
+}
+.top-dou {
+  width: 980px;
+  height: 100%;
+  margin: auto;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: space-between;
+}
+.top-dou > div {
+  width: 155px;
+  height: 76px;
+  display: flex;
+  align-items: center;
+  /* margin-right:45px; */
+}
+.top-dou > .home-page {
+  width: 440px;
+  height: 76px;
+  /* background-color: blue; */
+  display: flex;
+  justify-content: space-between;
+  /* margin-right: 38px; */
+}
+.home-page > a:hover {
+  color: red;
+}
+.top-dou > div:last-child {
+  width: 280px;
+}
+.top-dou > div > input {
+  width: 280px;
+  height: 25px;
+  border: 1px solid rgb(188, 192, 189);
+}
+/* 发表说说部分 */
+article {
+  width: 980px;
+  height: 100%;
+  /* background-color: aliceblue; */
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 140px;
+}
+article > div {
+  height: 100%;
+}
+.function {
+  display: flex;
+}
+.function > div {
+  width: 406px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 140px;
+}
+.function > span {
+  color: #9d9e9c;
+}
+a {
+  font-size: 14px;
+  text-decoration: none;
+}
+.function > div > div:nth-of-type(1) > i {
+  display: inline-block;
+  background-image: url("../img/icon.png");
+  background-position: -3px -99px;
+  width: 14px;
+  height: 14px;
+  margin-left: 2px;
+}
+.function > div > div:nth-of-type(2) > i {
+  display: inline-block;
+  background-image: url("../img/icon.png");
+  background-position: -3px -99px;
+  width: 14px;
+  height: 14px;
+  margin-left: 2px;
+}
+.function > div > div:nth-of-type(3) > i {
+  display: inline-block;
+  background-image: url("../img/icon.png");
+  background-position: -2px -8px;
+  width: 15px;
+  height: 15px;
+  margin-left: 2px;
+}
+.function > div > div:nth-of-type(4) > i {
+  display: inline-block;
+  background-image: url("../img/icon.png");
+  background-position: -2px -129px;
+  width: 15px;
+  height: 15px;
+  margin-left: 2px;
+}
+.function > div > div:nth-of-type(5) > i {
+  display: inline-block;
+  background-image: url("../img/icon.png");
+  background-position: -2px -158px;
+  width: 15px;
+  height: 15px;
+  margin-left: 2px;
+}
+.search > input {
+  width: 610px;
+  height: 25px;
+  border: 1px solid rgb(188, 192, 189);
+  margin-bottom: 27px;
+}
+section {
+  display: flex;
+  margin-bottom: 50px;
+}
+.pulisher {
+  margin-right: 20px;
+}
+.All {
+  width: 537px;
+  height: 100%;
+  border-bottom: 1px solid gray;
+  margin-left: 15px;
+}
+.Tell {
+  margin-top: 14px;
+  width: 100%;
+  background-color: rgb(236, 240, 235);
+  display: flex;
+}
+.Tell > div:first-child {
+  width: 357px;
+  text-align: left;
+  margin-left: 21px;
+}
+.Tell > div:first-child > a {
+  display: inline-block;
+  font-size: 17px;
+  margin-top: 15px;
+}
+.Tell > div:first-child > p {
+  margin: 16px 0px;
+}
+.Tell > div > img {
+  width: 108px;
+  height: 61px;
+  margin: 31px 26px 74px 26px;
+}
+.like {
+  display: flex;
+  width: 50px;
+  height: 20px;
+  border: 1px solid rgb(161, 157, 157);
+  padding: 6px 8px;
+  margin-bottom: 16px;
+}
+.like > i {
+  display: inline-block;
+  background-image: url("../img/ic_actions.png");
+  background-position: 0 -1px;
+  width: 12px;
+  height: 14px;
+  margin-top: 6px;
+}
+.like:hover > i {
+  display: inline-block;
+  background-image: url("../img/ic_actions.png");
+  background-position: 0 -20px;
+  width: 12px;
+  height: 14px;
+  margin-top: 6px;
+}
+.like3:hover>div > i {
+  display: inline-block;
+  background-image: url("../img/ic_actions.png");
+  background-position: 0 -20px;
+  width: 12px;
+  height: 14px;
+  margin-top: 6px;
+}
+.like4:hover>div > i {
+  display: inline-block;
+  background-image: url("../img/ic_actions.png");
+  background-position: 0 -20px;
+  width: 12px;
+  height: 14px;
+  margin-top: 6px;
+}
+.like3{
+  display: flex;
+}
+.like3>div> i {
+  display: inline-block;
+  background-image: url("../img/ic_actions.png");
+  background-position: 0 -1px;
+  width: 12px;
+  height: 14px;
+  margin-top: 6px;
+}
+.like3>div:first-child{
+  display: flex;
+  width: 50px;
+  border: 1px solid rgb(161, 157, 157);
+  padding: 6px 8px;
+  margin-bottom: 16px;
+  margin-right:10px;
+  }
+.like3>div:last-child{
+    display: flex;
+    height: 20px;
+border-left:3px solid gray;
+margin-top:6px;
+color: #9d9e9c;
+  }
+  .like3>div:last-child>p{
+    padding: 0px 10px;
+  }
+.All > div:last-child > p {
+  margin-top: 11px;
+  margin-left: 22px;
+  color: gray;
+}
+.Tell4{
+  width: 100%;
+  background-color: rgb(236, 240, 235);
+  display: flex;
+  justify-content: center;
+}
+.Tell4>div{
+  width:500px;
+  margin-top:10px;
+}
+.Tell4>div>p{
+  margin: 13px 0 22px 0;
+  color:blue;
+}
+.tu{
+  display: flex;
+justify-content: space-around;
+margin-top:8px;
+}
+.like4{
+  display: flex;
+}
+.like4 >div> i {
+  display: inline-block;
+  background-image: url("../img/ic_actions.png");
+  background-position: 0 -1px;
+  width: 12px;
+  height: 14px;
+  margin-top: 6px;
+}
+.like4>div:first-child{
+  display: flex;
+  width: 50px;
+  border: 1px solid rgb(161, 157, 157);
+  padding: 6px 8px;
+  margin-bottom: 16px;
+  margin-right:17px;
+  }
+.like4>div:last-child{
+    display: flex;
+    height: 20px;
+border-left:3px solid gray;
+margin-top:6px;
+color: #9d9e9c;
+  }
+  .like4>div:last-child>p{
+    padding: 0px 10px;
+  }
+.Page {
+  width: 360px;
+  height: 100%;
+  margin-top: 60px;
+}
+.Page > div {
+  width: 360px;
+  margin-left: 120px;
+  color: blue;
+  display: flex;
+  justify-content: space-between;
+}
+/* 右边导航部分 */
+aside {
+  width: 255px;
+  height: 100%;
+}
+p {
+  margin: 0px;
+}
+/* 第一部分 */
+.update {
+  box-sizing: border-box;
+  background-color: rgb(224, 223, 221);
+  width: 255px;
+  height: 114px;
+  display: flex;
+  /* justify-content: flex-start */
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 20px;
+  margin-bottom: 21px;
+}
+aside > .tupian > img {
+  width: 100%;
+}
+aside > a {
+  margin-bottom: 36px;
+}
+/* 第二部分 */
+.tupian > div {
+  margin: 40px 0px;
+}
+/* 第三部分 */
+.activity {
+  width: 100%;
+  /* height: 120px; */
+  margin: 30px 0px;
+}
+.activity > div > div {
+  margin: 25px 0px;
+}
+.activity > div > div > p {
+  color: rgb(189, 183, 183);
+}
+
+.fudong > img {
+  float: right;
+}
+/* 第四部分 */
+.movie {
+  width: 100%;
+  /* height:100px; */
+  margin-bottom: 20px;
+}
+.movie .country {
+  display: flex;
+}
+.movie .country > img {
+  margin-right: 12px;
+}
+.movie .serise {
+  display: flex;
+}
+.movie .serise > img {
+  margin-right: 12px;
+}
+.movie > div > div > div > p {
+  color: gray;
+}
+.country {
+  margin-bottom: 15px;
+}
+.below {
+  width: 100%;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+.below > div {
+  width: 953px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px dashed gray;
+  box-sizing: border-box;
+  padding-top: 13px;
+  padding-bottom: 26px;
+}

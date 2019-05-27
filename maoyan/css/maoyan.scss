@@ -1,0 +1,289 @@
+@charset "UTF-8";
+a {
+  text-decoration: none;
+}
+p {
+  margin: 0;
+  color: black;
+}
+span {
+  color: gray;
+}
+@mixin daxiao {
+  display: inline-block;
+  background-image: url("../img/icon.png");
+  width: 0.69rem;
+  height: 0.6rem;
+  background-size: 5rem 3rem;
+}
+@mixin diany {
+  display: inline-block;
+  background-image: url("../img/icon.png");
+  width: 0.77rem;
+  height: 1.15rem;
+  background-size: 5rem 3rem;
+}
+body {
+  background-color: #f5f5f5;
+  position: relative;
+  header {
+    background-color: #d33e37;
+    padding: 0.67rem 0.45rem;
+    display: flex;
+    align-items: center;
+    .maotu {
+      border-radius: 50%;
+      margin-right: 0.46rem;
+      display: flex;
+      align-items: center;
+      border: 1px solid blue;
+    //   i {
+    //     width: 2rem;
+    //     height: 2rem;
+    //     display: inline-block;
+    //     background-image: url("../img/avatar.png");
+    //     background-size: 100%;
+    //   }
+    }
+    .huiyuan {
+      font-size: 0.4rem;
+      color: white;
+      flex: 1;
+      p {
+        margin-bottom: 0.4rem;
+        color: white;
+      }
+      span {
+        color: white;
+      }
+    }
+    span {
+      a {
+        color: white;
+      }
+    }
+  }
+  .xiangkan {
+    display: flex;
+    padding: 0.35rem 0rem;
+    background-color: white;
+    margin-bottom: 0.5rem;
+    text-align: center;
+   font-size: 0.4rem;
+    .xiang {
+      width: 25%;
+      margin: 0;
+      border-right: 1px solid gray;
+      i {
+        @include daxiao;
+      }
+
+    }
+    .xiang2 {
+      width: 25%;
+      margin: 0;
+      border-right: 1px solid gray;
+      i {
+        @include daxiao;
+        background-position: -1.83rem 0;
+      }
+      p {
+        font-size: 0.4rem;
+      }
+    }
+    .xiang3 {
+      width: 25%;
+      margin: 0;
+      border-right: 1px solid gray;
+      i {
+        @include daxiao;
+        background-position: -2.83rem 0;
+      }
+      p {
+        font-size: 0.4rem;
+      }
+    }
+    .xiang4 {
+      width: 25%;
+      margin: 0;
+      i {
+        @include daxiao;
+        background-position: -0.95rem 0;
+      }
+      p {
+        font-size: 0.4rem;
+      }
+    }
+  }
+  .dingdan {
+    background-color: white;
+    padding: 0.52rem 0.45rem;
+    border-bottom: 1px solid gray;
+    a {
+      display: flex;
+      font-size: 0.4rem;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  .quan {
+    .dingdan1 {
+      background-color: white;
+      padding: 0.52rem 0.45rem;
+      a {
+        display: flex;
+        font-size: 0.4rem;
+        justify-content: space-between;
+        align-items: center;
+      }
+      &:last-child {
+        margin-bottom: 0.5rem;
+      }
+      &:not(:last-child) {
+        border-bottom: 1px solid gray;
+      }
+    }
+  }
+  .xiaofei {
+    display: flex;
+    padding: 0.35rem 0.5rem;
+    justify-content: space-between;
+    background-color: white;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    .xiao:nth-child(1) {
+      i {
+        display: inline-block;
+        background-image: url("../img/icon.png");
+        width: 0.69rem;
+        height: 0.6rem;
+        background-size: 5rem 3rem;
+        background-position: 0 -0.8rem;
+      }
+      p {
+        font-size: 0.4rem;
+      }
+    }
+    .xiao:nth-child(2) {
+      i {
+        display: inline-block;
+        background-image: url("../img/icon.png");
+        width: 0.72rem;
+        height: 0.65rem;
+        background-size: 5rem 3rem;
+        background-position: -0.95rem -0.76rem;
+      }
+      p {
+        font-size: 0.4rem;
+      }
+    }
+    .xiao:nth-child(3) {
+      i {
+        display: inline-block;
+        background-image: url("../img/icon.png");
+        width: 0.69rem;
+        height: 0.6rem;
+        background-size: 5rem 3rem;
+        background-position: -1.87rem -0.76rem;
+      }
+      p {
+        font-size: 0.4rem;
+      }
+    }
+    .xiao:nth-child(4) {
+      i {
+        display: inline-block;
+        background-image: url("../img/icon.png");
+        width: 0.69rem;
+        height: 0.6rem;
+        background-size: 5rem 3rem;
+        background-position: -2.85rem -0.76rem;
+      }
+      p {
+        font-size: 0.4rem;
+      }
+    }
+  }
+  .qian {
+    .qianbao {
+      background-color: white;
+      padding: 0.52rem 0.45rem;
+      a {
+        display: flex;
+        font-size: 0.4rem;
+        justify-content: space-between;
+        align-items: center;
+      }
+      &:last-child {
+        margin-bottom: 0.5rem;
+      }
+      &:not(:last-child) {
+        border-bottom: 1px solid gray;
+      }
+      &:nth-child(2) {
+        a {
+          p:nth-child(2) {
+            color: gray;
+            span {
+              margin-left: 0.3rem;
+            }
+          }
+        }
+      }
+      &:nth-child(3) {
+        a {
+          p:nth-child(2) {
+            color: gray;
+            span {
+              margin-left: 0.3rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  .shezhi {
+    background-color: white;
+    padding: 0.52rem 0.45rem;
+    margin-bottom: 2.2rem;
+    a {
+      display: flex;
+      font-size: 0.4rem;
+      justify-content: space-between;
+      align-items: center;
+      p:nth-child(2) {
+        color: gray;
+        span {
+          margin-left: 0.3rem;
+        }
+      }
+    }
+  }
+  .dianying {
+      background-color: #f5f5f5;
+    border-top: 1px solid gray;
+    display: flex;
+    padding: 0.25rem 0.47rem;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    width:100%;
+    box-sizing: border-box;
+    i:nth-child(1) {
+      @include diany;
+      background-position: 0 -1.57rem;
+    }
+    i:nth-child(2) {
+      @include diany;
+      background-position: -0.95rem -1.57rem;
+    }
+    i:nth-child(3) {
+      @include diany;
+      background-position: -2.06rem -1.57rem;
+    }
+    i:nth-child(4) {
+      @include diany;
+      background-position: -3rem -1.57rem;
+    }
+  }
+}

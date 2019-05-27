@@ -1,0 +1,348 @@
+@charset "UTF-8";
+p {
+  margin: 0;
+}
+// 导航栏每个图标大小
+@mixin iIcon {
+  width: 21px;
+  height: 19px;
+  display: inline-block;
+  background-image: url("../img/icon.png");
+}
+// 导航栏每个a标签
+@mixin awenzi {
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+}
+// 颜色红色
+$color1: red;
+main {
+  width: 1200px;
+  height: 100%;
+  margin: auto;
+}
+// 导航栏
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  a {
+    @include awenzi;
+    &:hover {
+      color: $color1;
+    }
+    i {
+      @include iIcon;
+    }
+  }
+}
+header {
+  position: fixed;
+  top: 0px;
+  width: 1200px;
+  background-color: rgb(247, 246, 248);
+  padding: 15px 0px;
+  z-index: 2;
+  a:nth-child(1) {
+    &:hover {
+      i {
+        background-position: -21px 0;
+      }
+    }
+  }
+}
+header {
+  a:nth-child(2) {
+    &:hover {
+      i {
+        background-position: -21px -20px;
+      }
+    }
+    i {
+      background-position: 0 -20px;
+    }
+  }
+}
+header {
+  a:nth-child(3) {
+    &:hover {
+      i {
+        background-position: -22px -39px;
+      }
+    }
+    i {
+      background-position: 0 -39px;
+    }
+  }
+}
+header {
+  a:nth-of-type(4) {
+    &:hover {
+      i {
+        background-position: -22px -63px;
+      }
+    }
+    i {
+      background-position: 0 -63px;
+    }
+  }
+}
+header {
+  a:nth-of-type(5) {
+    &:hover {
+      i {
+        background-position: -22px -80px;
+      }
+    }
+    i {
+      background-position: 0 -80px;
+    }
+  }
+}
+header {
+  a:nth-of-type(6) {
+    &:hover {
+      i {
+        background-position: -22px -101px;
+      }
+    }
+    i {
+      background-position: 0 -101px;
+    }
+  }
+}
+// 图片
+.banner {
+  height: 510px;
+  margin-top: 77px;
+  margin-bottom: 60px;
+}
+$margin1: 0;
+@mixin wenzi-p {
+  text-align: center;
+  font-size: 19px;
+  margin: $margin1;
+}
+@mixin biaoti {
+  text-align: center;
+  font-size: 33px;
+  margin-bottom: 46px;
+}
+$display-1: flex;
+article {
+  h1 {
+    @include biaoti;
+  }
+  .miqi {
+    display: $display-1;
+    justify-content: space-around;
+    div {
+      img {
+        margin-bottom: 25px;
+        width: 115px;
+      }
+      p {
+        @include wenzi-p;
+      }
+    }
+  }
+}
+// 商店
+$width-1: 1200px;
+.shop {
+  h1 {
+    @include biaoti;
+  }
+  .datu {
+    width: $width-1;
+    height: 591px;
+    display: $display-1;
+    .shop-picture {
+      width: 50%;
+    }
+    .goods {
+      display: $display-1;
+      flex-wrap: wrap;
+      width: 50%;
+      height: 591px;
+      .tutu {
+        width: 50%;
+      }
+    }
+  }
+}
+// 迪士尼资讯
+@mixin p-1 {
+  font-size: 30px;
+  margin: 39px 118px 30px 49px;
+  text-align: left;
+}
+@mixin p-2 {
+  font-size: $ziti;
+  margin: 31px 118px 0px 49px;
+  text-align: left;
+}
+$ziti: 14px;
+@mixin tubiao {
+  display: inline-block;
+  width: 23px;
+  height: 22px;
+  background-image: url("../img/icon.png");
+  background-position: -41px -170px;
+}
+@mixin p-3 {
+  font-weight: bold;
+  font-size: 22px;
+  margin: 10px 17px 0px 29px;
+}
+@mixin p-4 {
+  font-size: $ziti;
+  margin: 10px 29px 25px 30px;
+  text-align: left;
+}
+@mixin sanjiao {
+  display: inline-block;
+  width: 0px;
+  height: 0px;
+  border-top: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 25px solid white;
+  border-left: 25px solid transparent;
+  position: absolute;
+}
+.information {
+  border: 1px solid gray;
+  display: $display-1;
+  .madan {
+    height: 770px;
+    .img-1 {
+      display: inline-block;
+      width: 600px;
+      height: 470px;
+      background-image: url("../img/160113121641905797.jpg");
+      position: relative;
+      span {
+        @include sanjiao;
+        bottom: 0px;
+        left: 29px;
+      }
+    }
+    p {
+      @include p-1;
+    }
+    .open {
+      @include p-2;
+      .liw-1 {
+        @include tubiao;
+      }
+    }
+  }
+}
+@mixin tup {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+  position: relative;
+}
+.movie {
+  height: 770px;
+  .movie-item {
+    width: 50%;
+    display: flex;
+    .declare {
+        height: 470px;
+      .tutu {
+        background-image: url("../img/160321105131828720.jpg");
+        @include tup;
+        span {
+          @include sanjiao;
+          bottom: -9px;
+          left: 29px;
+        }
+      }
+      .ll-1 {
+        @include p-3;
+      }
+      .best {
+        @include p-4;
+        .liw-1 {
+          @include tubiao;
+        }
+      }
+      .tutu-1{
+        background-image: url("../img/160225171114064621.jpg");
+        @include tup;
+        span {
+          @include sanjiao;
+          bottom: -9px;
+          left: 29px;
+        }
+      }
+    }
+  }
+}
+.movie {
+  .te-1 {
+    height: 296px;
+    display: flex;
+    justify-content: flex-start;
+    .tutu-3{
+        background-image: url("../img/160229155948703765.jpg");
+        @include tup;
+        width:460px;
+        span {
+          @include sanjiao;
+          transform: rotate(-90deg);
+         right: -3px;
+         top:20px;
+        }
+      }
+    .propaganda {
+      .ll-1 {
+        @include p-3;
+      }
+      .best {
+        @include p-4;
+        i {
+          @include tubiao;
+        }
+      }
+    }
+  }
+}
+@mixin lig {
+  width: 485px;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+}
+footer {
+  margin: auto;
+  .down:nth-child(1) {
+    @include lig;
+    padding-bottom: 25px;
+    padding-top: 91px;
+    border-bottom: 1px solid gray;
+    margin-bottom: 23px;
+    .dis {
+      width: 173px;
+      height: 64px;
+      padding-right: 30px;
+      border-right: 1px solid grey;
+    }
+    .weibo {
+      text-align: center;
+      width: 100px;
+      height: 90px;
+    }
+  }
+  .down:nth-child(2) {
+    @include lig;
+    margin-bottom: 17px;
+  }
+  p {
+    text-align: center;
+  }
+}

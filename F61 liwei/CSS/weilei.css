@@ -1,9 +1,0 @@
-/* n是从0开始自增的，只选定前三个 */
-section:nth-child(-n+3){
-    color:red;
-}
-section:first-child{
-    color:green;
-}
-
-

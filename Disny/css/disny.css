@@ -19,6 +19,7 @@ header{
 a{
     color:black;
     font-size: 20px;
+    text-decoration:none;
 }
 a:hover{
     color:red;
@@ -170,24 +171,27 @@ margin: 43px;
     height:770px;
     display: flex;
     justify-content: flex-start;
+    /* outline: 0.5px solid rgb(197, 195, 195); */
 }
 .information>div:first-child{
     width:50%;
     height:100%;
+    position: relative;
     /* display: flex;
     flex-direction: column; */
 
 }
-.information>div:first-child>i{
-    display: inline-block;
-    width: 50px;
-    height: 26px;
-    background-image:("../img/icon.png");
-    background-position: -0px -195px;
-    position: absolute;
-    z-index: 1;
-    left: 194px;
-    top:2202px;
+.information>div:first-child>span{
+    display:inline-block;
+   width:0px;
+   height:0px;
+   border-top:25px solid transparent;
+   border-right: 25px solid transparent;
+   border-bottom: 25px solid white;
+   border-left: 25px solid transparent;
+   position: absolute;
+   bottom:296px;
+   left:29px;
 }
 .information>div>p
 {
@@ -219,16 +223,19 @@ margin: 43px;
 }
 .movie>div:first-child>.declare{
     width:50%;
+    position: relative;
 }
-.movie>div:first-child>.declare>i{
+.movie>div:first-child>.declare>span{
     display: inline-block;
-    width: 50px;
-    height: 26px;
-    background-image:("../img/icon.png");
-    background-position: 0px -195px;
+    width: 0px;
+    height: 0px;
+    border-top:16px solid transparent;
+    border-right: 16px solid transparent;
+    border-bottom: 16px solid white;
+    border-left: 16px solid transparent;
     position: absolute;
-    left:775px;
-    top:2032px;
+    left:36px;
+    bottom: 179px;
     z-index: 1;
 
 }
@@ -255,6 +262,7 @@ margin: 43px;
 }
 .movie>div:first-child>.posters{
     width:50%;
+    position: relative;
 }
 .movie>div:first-child>.posters{
     width:300px;
@@ -262,16 +270,18 @@ margin: 43px;
     display: flex;
     flex-direction: column; 
 }
-.movie>div:first-child>.posters>i{
+.movie>div:first-child>.posters>span{
     display: inline-block;
-    width: 50px;
-    height: 26px;
-    background-image:("../img/icon.png");
-    background-position: -0px -195px;
+    width: 0px;
+    height: 0px;
+    border-top:16px solid transparent;
+    border-right: 16px solid transparent;
+    border-bottom: 16px solid white;
+    border-left: 16px solid transparent;
     position: absolute;
+    left:36px;
+    bottom: 178px;
     z-index: 1;
-    left:1076px;
-    top:2033px;
 
 }
 .movie>div:first-child>.posters>.message>p:first-child{
@@ -295,17 +305,20 @@ margin: 43px;
     height: 296px; 
     display: flex;
     justify-content: flex-start;
+    position: relative;
 }
-.information>.movie>div:last-child>i{
+.information>.movie>div:last-child>span{
     display: inline-block;
-    width: 25px;
-    height: 49px;
-    background-image:("../img/icon.png");
-    background-position: -0px -195px;
+    width: 0px;
+    height: 0px;
+    border-top:16px solid transparent;
+    border-right: 16px solid white;
+    border-bottom: 16px solid transparent;
+    border-left: 16px solid transparent;
     position: absolute;
+    left:269px;
+    top: 34px;
     z-index: 1;
-    left:1028px;
-    top:2249px;
 }
 .movie>div:last-child>.propaganda>p:first-child{
     font-weight: bold;
@@ -348,7 +361,7 @@ footer>.down{
     display: flex; 
     justify-content: space-around;
     margin: auto;
-    margin-bottom:17px;
+    
 }
 footer>.down>p{
     font-size: 14px;

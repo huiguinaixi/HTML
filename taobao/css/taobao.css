@@ -1,0 +1,644 @@
+/* 清楚margin和padding */
+blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul,img{
+    margin: 0;
+    padding: 0;
+}
+/* 导航栏 */
+header{
+    widows: 100%;height:30px;
+    background-color: #f5f5f5;
+}
+header>div{
+    width:1200px;
+    height: 30px;
+    background-color: red;
+    margin: auto;
+}
+/* 淘宝 搜索栏- */
+.sousuo{
+    height:166px;
+}
+.sousuo>div{
+    width:1200px;
+    height:166px;
+    background-color:blue;
+    margin: auto;
+}
+/* 淘宝展示栏  */
+article{
+    background-color: #f5f5f5;
+    /* height: 2400px; */
+}
+/* 上半部分 */
+.top{
+    width:1200px;
+    height: 610px;
+    margin: auto;
+    display: flex;
+    margin-bottom:12px;
+}
+.top-left{
+    width:890px;
+    height:610px;
+    background-color:greenyellow;
+    margin-right:23px;
+}
+.top-right{
+    width:290px;
+    height:610px;
+    background-color:gold;
+}
+/* 中间部分  */
+.center{
+    width:1200px;
+    height: 885px;
+    margin: auto;
+    display: flex;
+    margin-bottom:12px;
+}
+/* .center-left{
+    width:80%;
+    height: 885px;
+    background-color:rgb(231, 23, 186);
+    margin-right:13px;
+} */
+.center-right{
+    width:290px;
+    height: 885px;
+    background-color:rgb(12, 238, 151);
+}
+/* 下面部分 */
+.bottom{
+    width:1200px;
+    height: 860px;
+    background-color: springgreen;
+    margin: auto;
+}
+.remaidanping{
+    width:100%;
+    height: 640px;
+    background-color: rgb(212, 199, 12);
+}
+.xiaofeizhebaozhang{
+    width:100%;
+    height: 225px;
+    background-color: rgb(146, 3, 134);
+}
+/*  结尾  */
+footer{
+    width:100%;
+    height: 250px;
+    background-color: white;
+}
+footer>div{
+    width:1200px;
+    height: 250px;
+    background-color: rgb(219, 69, 9);
+    margin: auto;
+}
+
+/* 要写的中间左半部分 */
+
+.center-left{
+    width:890px;
+    margin-right:23px;
+ 
+}
+.center-left a{
+    text-decoration: none;
+}
+.walk-lw{
+    height:38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.walk-lw>div:first-child{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.walk-lw>div:first-child::before{
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width:50px;
+    height: 3px;
+    background-color: #e7e7e8;
+    left:-65px;
+}
+.walk-lw>div:first-child::after{
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width:50px;
+    height: 3px;
+    background-color: #e7e7e8;
+    right:-65px;
+}
+.walk-lw>div:first-child>img{
+    width:20px;
+    height:20px;
+    padding-right: 5px;
+}
+.walk-lw>div:first-child>p{
+    font-size: 18px;
+    font-weight: bold;
+}
+.More-lw{
+width: 70px;
+height:26px;
+background-color: white;
+border-radius: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+position: absolute;
+right:10px;
+bottom: 5px;
+}
+.More-lw>a{
+    font-size:12px;
+    margin-right:2px;
+}
+.More-lw img{
+    transform: rotate(270deg);
+}
+.caidan-lw{
+    opacity: 0;
+    position: absolute;
+    background-color: white;
+    min-width: 50px;
+    box-shadow: 0 0 8px gray;
+    left: 70px;
+    border-radius: 10px;
+    transition: all 1s;
+}
+.caidan-lw>a{
+    font-size: 14px;
+    padding:12px 10px;
+    text-decoration: none;
+    display: block;
+    color: gray;
+    border-radius: 10px;
+}
+.caidan-lw>a:hover{
+background-color: #f5f5f5;
+}
+.More-lw:hover>.caidan-lw{
+opacity: 1;
+z-index: 2;
+}
+.More-lw:hover{
+    background-color: rgb(245, 239, 239);
+}
+/*宝贝的 */
+.baby-lw{
+    height:361px;
+    background-color: white;
+    display: flex;
+    margin-bottom: 27px;
+}
+.Dear-lw{
+    width: 440px;
+    height: 361px;
+    margin-right:7px;
+    display: flex;
+    border: 1px solid #ff5a9e;
+    position: relative;
+}
+
+.Popular-lw{
+    width:100px;
+    height: 361px;
+    background-color: #ff3487;
+}
+.Popular-lw>i{
+display: inline-block;
+background-image: url("../img/index-liwei1_03.jpg");
+width:100px;height:100px;
+}
+.Popular-lw-2>i{
+    display: inline-block;
+    background-image: url("../img/liwei9_03.jpg");
+    width:100px;height:100px;
+ }
+ .Popular-lw-2{
+    width:100px;
+    height: 361px;
+    background-color: #6248b3;
+ }
+ div[class^=Popular-lw]>div{
+    box-sizing: border-box;
+    padding: 8px 8px;
+}
+div[class^="Popular-lw"]>div>a{
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+}
+ul[class^="clothes-lw"]{
+    list-style: none;
+    padding-top:4px;
+}
+ul[class^="clothes-lw"]>li{
+    height: 19px;
+    line-height: 19px;
+    margin-bottom: 3px
+}
+ul[class^="clothes-lw"]>li:hover{
+    transform: scale(1.2);
+}
+.liang-lw>a:first-child{
+    margin-right: 2px;
+}
+.clothes-lw>li>a{
+    box-sizing: content-box;
+padding: 2px 9px;
+font-size: 12px;
+font-weight: bold;
+color: white;
+background-color: #ff5a9e;
+}
+.clothes-lw-2>li>a{
+    box-sizing: content-box;
+padding: 2px 9px;
+font-size: 12px;
+font-weight: bold;
+color: white;
+background-color: #816dc2;
+}
+.Zone-lw{
+    width:340px;
+}
+.Zone-lw-itme1{
+    display: flex;
+    height:204px;
+    border-bottom: 1px solid gray;
+  
+}
+.equipment-lw>div:first-child{
+height:50%;
+border-bottom: 1px solid gray;
+}
+.equipment-lw>div:first-child>img{
+    width:100%;
+    height: 100%;
+}
+.coat-lw{
+    width:100px;height:204px;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+}
+.coat-lw>div:first-child{
+width: 102px;height:57px;
+display: flex;
+flex-wrap: wrap;
+align-content: center;
+justify-content: center;
+padding: 1px 0;
+}
+.coat-lw>div:nth-child(2)>img{
+    width:100px;
+    height:145px;
+}
+.coat-lw>div>p:first-child{
+    font-size: 12px;
+}
+.coat-lw>div>p:nth-child(2){
+    font-size: 14px;
+    font-weight: bold;
+}
+.shoes-lw>div:first-child{
+    padding: 14px 25px 0 14px;
+}
+.shoes-lw>div>p{
+    font-size: 12px;
+   color: #b8b8b8;
+}
+.shoes-lw>div>div:nth-child(2){
+    margin:8px 0;
+}
+.shoes-lw>div>div:nth-child(2)>p:first-child{
+    font-size: 14px;
+    font-weight: bold;
+}
+.shoes-lw>div>div:nth-child(2)>p:nth-child(2){
+    color: #b8b8b8;
+    font-size: 12px;
+}
+.shoes-lw>div>div:nth-child(3){
+    width:55px;height:16px;
+    background-color: #ff4101;
+}
+.shoes-lw>div>div:nth-child(3)>p{
+    font-size: 12px;
+    color: white;
+}
+.shoes-lw>div:nth-child(2)>img{
+height: 107px;
+width:100%;
+}
+.Zone-xia-lw{
+    display: flex;
+}
+.Zone-xia-lw>div:first-child{
+    box-sizing: border-box;
+    width:202px;height:157px;
+    border-right:1px solid gray;
+    padding: 9px 11px 8px 11px;
+}
+.Zone-xia-lw-2{
+    display: flex;
+}
+.Zone-xia-lw-2>div:first-child{
+    box-sizing: border-box;
+    width:202px;height:157px;
+    border-right:1px solid gray;
+}
+.Zone-xia-lw-2>div:first-child>img{
+    margin: 14px 6px -5px 25px;
+}
+.hai-lw{
+    display: flex;
+}
+.hai-lw>p{
+    font-size: 12px;
+    margin-left: 30px;
+    line-height: 27px;
+}
+.bao-lw{
+    width: 50px;height: 25px;background-color: #796ac6;
+margin-left:9px;font-size: 12px;color: white;text-align: center;line-height: 24px;
+}
+.interactive-lw{
+    display: flex;
+    width: 139px;
+    height: 80px;
+    border-bottom: 1px solid gray;
+}
+.Autumn-lw>.interactive-lw:nth-child(2){
+    display: flex;
+    width: 140px;
+    height: 78px;
+    border-bottom:none;
+}
+.Autumn-lw>.interactive-lw:nth-child(2) img{
+    height:75px;
+    width:66px;
+}
+.interactive-lw>div:first-child{
+    width:52px;
+    padding: 13px 10px;
+}
+.interactive-lw>div>p:first-child{
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+.interactive-lw>div>p:last-child{
+    font-size: 12px;
+    color: #666695;
+}
+.Global-lw{
+    width: 440px;
+    height: 361px;
+    display: flex;
+    border: 1px solid #ff5a9e;
+    position: relative;
+}
+/* 下划线 */
+.Dear-lw::before{
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width:100px;
+    height: 1px;
+    background-color: #bf0400;
+   top:371px;
+}
+.Dear-lw::after{
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width:340px;
+    height: 1px;
+    background-color: #ebb2b1;
+   top:371px;
+   left: 100px;
+}
+.Global-lw::before{
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width:100px;
+    height: 1px;
+    background-color: #4159df;
+    top:371px;
+}
+.Global-lw::after{
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width:340px;
+    height: 1px;
+    background-color: #b9c1ea;
+    top:371px;
+    left: 100px;
+}
+/* 新款  */
+.new-lw{
+    height:70px;
+    width:880px;
+    margin: auto;
+    background-image: url("../img/liwei17_03.jpg");
+    display: flex;
+    margin-bottom: 12px;
+}
+.new-lw>div:first-child{
+    height:70px;width:262px;background-color: #c2f3c8;
+    margin-left:106px;
+}
+.new--item-lw>div{
+    height:70px;width:366px;background-color: white;
+    position: relative;
+    display: flex;
+}
+.new--item-lw>div::before{
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width:0;height: 0;
+    border-top:33px solid transparent;
+    border-right:42px solid white;
+    border-bottom:38px solid transparent;
+    border-left:38px solid transparent;
+left:-80px;
+}
+.new--item-lw>div::after{
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width:0;height: 0;
+    border-top:33px solid transparent;
+    border-right:42px solid white;
+    border-bottom:38px solid transparent;
+    border-left:38px solid transparent;
+right:-80px;top:0;
+transform: rotate(180deg);
+}
+.new--item-lw>div>div:nth-child(1){
+    width:239px;
+    height: 42px;
+    text-align: center;
+    padding: 10px 0;
+    margin-left:11px;
+}
+.sock-lw{
+    border-bottom:1px solid black;
+    text-align: center;
+}
+.sock-lw>a{
+    font-size: 26px;
+    color: #1c1862;
+    font-weight: bold;
+}
+.sock-lw+a{
+    font-size: 14px;
+    color: #1c1862;
+    font-weight: bold;
+}
+.tian-lw{
+    margin: auto;
+}
+.tian-lw>div{
+    width:90px;border: 3px solid #ff66ac;
+    padding: 2px 25px;
+    box-sizing: border-box;
+}
+.tian-lw>div>a{
+    font-size: 14px;color: #ff66ac;
+}
+/* 时尚爆料王 */
+/* 第四部分 */
+.Brand-lw{
+    height:256px;
+    width: 890px;
+    background-color:white;
+    margin-bottom: 15px;
+    display: flex;
+}
+.ifashion-lw{
+    width:25%;
+    height:256px;
+    border-right: 1px solid gray;
+}
+.ifashion-lw>div:first-child{
+    height: 39px;
+}
+.ifashion-lw>div:first-child>img{
+    border-bottom: 1px solid gray;
+}
+.shirt-lw{
+    height: 219px;
+    display: flex;
+}
+.shirt-lw>div:first-child{
+    display: flex;
+    width: 114px;height: 218px;
+  padding:10px;
+  border-right:  1px solid gray;
+  box-sizing: border-box;
+}
+.shirt-lw>div:first-child>i{
+display: inline-block;
+background-image: url("../img/pcldmzzi.png");
+width: 91px;
+height: 200px;
+position: relative;
+background-repeat: no-repeat;
+}
+.zhen-lw{
+    position: absolute;
+    box-sizing: border-box;
+    padding: 6px;
+    width: 91px;height: 42px;
+    background-color: #ff0055;
+    bottom: -42px;
+    opacity: 0;
+transition: all 1s;
+}
+.shirt-lw>div:first-child>i:hover>.zhen-lw{
+    opacity: 1;
+    bottom: 0;
+}
+.zhen-lw>a{
+    font-size: 12px;color: white;font-weight: bold;
+}
+.zhi-lw{
+    width: 109px;height: 109px;
+    padding: 10px;box-sizing: border-box;
+    border-bottom:  1px solid gray;
+}
+.zhi-lw-2{
+    width: 109px;height: 109px;
+    padding: 10px;box-sizing: border-box;
+}
+.tupian-lw{
+    display: flex;
+    flex-wrap: wrap;
+}
+.tupian-lw>div{
+    box-sizing: border-box;
+    width: 221px;height: 109px;
+    display: flex;
+}
+.tupian-lw>div:first-child{
+    border-bottom:1px solid gray;
+}
+.tupian-lw>div>img:first-child{
+    border-right:1px solid gray;
+}
+.shirt-lw-2{
+    height: 219px;
+    display: flex;
+}
+.shirt-lw-2>div:first-child{
+    display: flex;
+    width: 114px;height: 218px;
+  padding:10px;
+  border-right:  1px solid gray;
+  box-sizing: border-box;
+}
+.shirt-lw-2>div:first-child>i{
+display: inline-block;
+background-image: url("../img/liwei23_03.jpg");
+width: 91px;
+height: 200px;
+position: relative;
+background-repeat: no-repeat;
+}
+.zhen-lw-2{
+    position: absolute;
+    box-sizing: border-box;
+    padding: 6px;
+    width: 91px;height: 42px;
+    background-color: #940ce2;
+    bottom: -42px;
+    opacity: 0;
+    transition: all 1s;
+}
+.shirt-lw-2>div:first-child>i:hover>.zhen-lw-2{
+    opacity: 1;
+    bottom: 0;
+}
+.zhen-lw-2>a{
+    font-size: 12px;color: white;font-weight: bold;
+}
+/* 第五部分 */
+.left-2-5{
+    height:69px;
+    background-color: rgb(99, 9, 173);
+}
+
